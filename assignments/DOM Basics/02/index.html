@@ -48,5 +48,22 @@
     <script>
       // your code goes here
     </script>
+
+    <script>
+      document.getElementById("demo").style.border = `1px solid purple`;
+      document.getElementsByClassName(`demo`).style.border = `1px solid orange`;
+      document.getElementsByTagName("article").style.border = `1px solid blue`;
+
+      var demoClass = document.getElementsByClassName(`demo`);
+      for (let i = 0; i < demoClass.length; i++) {
+        demoClass[i].style.border = `1px solid blue`;
+      }
+
+      var demoQueryAllClass = document.querySelectorAll(`.demo-query-all`);
+
+      for (let i = 0; i < demoQueryAllClass.length; i++) {
+        demoQueryAllClass[i].style.border = `1px solid green`;
+      }
+    </script>
   </body>
 </html>

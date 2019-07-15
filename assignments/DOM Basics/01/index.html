@@ -10,7 +10,46 @@
     <body>
       <h1>Document Object Model</h1>
     <script>
-      // your code goes here
+      //1
+      var element = document.createElement("p");
+
+      //2
+      element.textContent = "Hello Javascript";
+      document.body.appendChild(element);
+
+      //3
+      const content = element.innerHTML;
+      element.innerHTML = `I love <strong>Javascript</strong>`;
+      document.body.appendChild(element);
+
+      //4
+      var li1 = document.createElement("li");
+      var unlist = document.createElement("ul");
+      var li2 = document.createElement("li");
+      var li3 = document.createElement("li");
+
+      li1.innerText = "Buy groceries";
+      li2.innerText = "Feed the cats";
+      li3.innerText = "Do laundry";
+
+      unlist.appendChild(li1);
+      unlist.appendChild(li2);
+      unlist.appendChild(li3);
+
+      unlist
+
+      unlist.removeChild("li3");
+
+      //5
+      var li4 = document.createElement("li");
+
+      li4.innerText = "something random";
+
+      unlist.appendChild(li4);
+
+      //6
+      unlist.removeChild(li3);
+
     </script>
   </body>
 </html>
