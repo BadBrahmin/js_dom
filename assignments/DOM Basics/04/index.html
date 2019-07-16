@@ -12,5 +12,26 @@
       <li>Favorites: <span id="favorites"></span></li>
       <li>Hometown: <span id="hometown"></span></li>
     </ul>
+
+    <script>
+      //2
+      document.body.style.font = "Arial, sans-serif";
+
+      //3
+      document.getElementById("nickname").textContent = "Rowdy";
+      document.getElementById("favorites").textContent = "Bad, Rotten";
+      document.getElementById("hometown").textContent = "DOM";
+
+      //4
+      document.querySelectorAll("li").className = "listitem";
+
+      var listItem = document.querySelectorAll("li");
+      [...listItem].forEach(n => (n.style.color = "red"));
+
+      var newImg = document.createElement("img");
+      newImg.setAttribute("src", "./assests/elon.jpeg");
+
+      document.body.appendChild(newImg);
+    </script>
   </body>
 </html>
