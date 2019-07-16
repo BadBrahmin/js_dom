@@ -39,5 +39,22 @@
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
     // Your code goes here
+
+    //1
+    ul.firstElementChild.style.background = "red";
+
+    //2
+    var allLi = document.querySelectorAll("li");
+    allLi.forEach(n => (n.style.background = "blue"));
+
+    //3
+    allLi[2].style.background = "pink";
+
+    //4
+    var middleTiger = allLi[1];
+
+    //5
+    middleTiger.previousElementSibling.style.background = "coral";
+    middleTiger.nextElementSibling.style.background = "aquamarine";
   </script>
 </html>

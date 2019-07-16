@@ -26,3 +26,5 @@ var demoQueryAllClass = document.querySelectorAll(`.demo-query-all`);
 for ( let i = 0; i < demoQueryAllClass.length ; i++){
 demoQueryAllClass[i].style.border = `1px solid green`;
 }
+
+
