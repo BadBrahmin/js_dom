@@ -6,12 +6,27 @@
 4. Iterate through each li and change the class to "listitem". Add a style tag that sets a rule for "listitem" to make the color red.
 5. Create a new img element and set its src attribute to a picture of you. Append that element to the page.
 
-
 ### Updating the google style
 
 1. Open up [Google](https://google.com) in your browser and open up the console.
 2. Find the Google logo and store it in a variable.
+
+   var gLogo = document.querySelector("#hplogo")
+
 3. Modify the source of the logo IMG so that it's a Yahoo logo instead. (https://casscommunity3.files.wordpress.com/2017/06/yahoo-logo.png)
+
+   document.getElementById("hplogo").src="https://casscommunity3.files.wordpress.com/2017/06/yahoo-logo.png";
+
+   document.getElementById("hplogo").srcset="https://casscommunity3.files.wordpress.com/2017/06/yahoo-logo.png";
+
 4. Find the Google search button and store it in a variable.
+
+   var searchButton = document.querySelector("#tsf > div:nth-child(2) > div > div.FPdoLc.VlcLAe > center > input.gNO89b")
+
 5. Modify the text of the button so that it says "Yahooo!" instead.
+   searchButton.value = "Yahoo!"
 6. Change the text on the button from 'I'm Feeling Lucky' => 'I'm Lucky'
+
+   var imLucky = document.querySelector("#tsf > div:nth-child(2) > div > div.FPdoLc.VlcLAe > center > input[type=submit]:nth-child(2)")
+
+   imLucky.value = "I'm Lucky"
