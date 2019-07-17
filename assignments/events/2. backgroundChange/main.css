@@ -1,0 +1,10 @@
+body {
+  height: 100vh;
+  background: #ffff00;
+}
+
+button {
+  text-align: center;
+  padding: 10px;
+  margin: 25%;
+}
