@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Document</title>
-</head>
-<body>
-    <div class="header">
-    </div>
+  </head>
+  <body>
+    <div class="header"></div>
     <section id="container">
-        <ul>
-            <li class="first">one</li>
-            <li class="second">two</li>
-            <li class="third">three</li>
-        </ul>
-        <ol>
-            <li class="first">one</li>
-            <li class="second">two</li>
-            <li class="third">three</li>
-        </ol>
+      <ul>
+        <li class="first">one</li>
+        <li class="second">two</li>
+        <li class="third">three</li>
+      </ul>
+      <ol>
+        <li class="first">one</li>
+        <li class="second">two</li>
+        <li class="third">three</li>
+      </ol>
     </section>
-    <div class="footer">
-    </div>
-    <script src="./index.js"></script>
+    <div class="footer"></div>
+    <script src="./index.js">
+        //1
+        document.body.getElementsByTagName("section")
 
-</body>
+        //2
+        document.body.querySelector("#container")
+
+        //3
+        document.body.querySelectorAll(".second")
+
+        //4
+        document.body.querySelector("ol .third")
+
+        //5
+        var helloText = document.body.querySelector("#container").createElement = "p"
+        helloText.textContent = "Hello"
+
+        //6
+      var mainF = document.querySelector(".footer")
+      mainF.classList.add("main")
+
+      //7
+      mainF.classList.remove("main")
+
+      //8, 9, 10
+      var ul = document.querySelector("ul")
+      var li = document.createElement("li")
+      li.textContent = "four"
+      ul.appendChild(li)
+
+      //11
+      var ol = document.querySelectorAll("ol li")
+
+      ol.forEach(n => n.style.background = "green")
+
+      //12
+      var remove = document.querySelector(".footer")
+      remove.parentNode.removeChild(remove)
+    </script>
+  </body>
 </html>

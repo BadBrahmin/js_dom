@@ -24,7 +24,11 @@
    var searchButton = document.querySelector("#tsf > div:nth-child(2) > div > div.FPdoLc.VlcLAe > center > input.gNO89b")
 
 5. Modify the text of the button so that it says "Yahooo!" instead.
+   var searchButton = document.querySelector("#tsf > div:nth-child(2) > div > div.FPdoLc.VlcLAe > center > input.gNO89b")
+
    searchButton.value = "Yahoo!"
+
+
 6. Change the text on the button from 'I'm Feeling Lucky' => 'I'm Lucky'
 
    var imLucky = document.querySelector("#tsf > div:nth-child(2) > div > div.FPdoLc.VlcLAe > center > input[type=submit]:nth-child(2)")
